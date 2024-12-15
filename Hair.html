@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care House</title>
+    <link rel="icon" type="image/x-icon" href="1271525.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="action.html">Care House</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="action.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Skin.html">Skin Care</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Hair.html">Hair Care</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="favItems.html">My Favorites</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="products-container" class="products">
+        <div>
+            <h1 class="text-center my-3">Hair Care</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-3 col-sm-12 my-5">
+                <div class="mb-5 product">
+                    <div>
+                        <img class="product-img" src="hair/pureology-2b3f998739754900a0dc98f1dde6b664.jpg">
+                    </div>
+                    <div class="details pb-0 px-0">
+                        <h4 class="text-center">Shampoo & Condition</h4>
+                        <h6 class="text-center">Pureology</h6>
+                        <p class="text-center">750$</p>
+                        <div class=" card 
+                         mt-2 m-auto justify-content-center d-flex justify-self-center  w-100 h-75 border-0">
+
+                            <form class="starForm " >
+                                <div class="stars" >
+                                    <input type="radio" name="rating" id="starOne-5" value="5">
+                                    <label for="starOne-5" class="bi bi-star-fill"></label>
+                                    <input type="radio" name="rating" id="starOne-4" value="4">
+                                    <label for="starOne-4" class="bi bi-star-fill"></label>
+                                    <input type="radio" name="rating" id="starOne-3" value="3">
+                                    <label for="starOne-3" class="bi bi-star-fill"></label>
+                                    <input type="radio" name="rating" id="starOne-2" value="2">
+                                    <label for="starOne-2" class="bi bi-star-fill"></label>
+                                    <input type="radio" name="rating" id="starOne-1" value="1">
+                                    <label for="starOne-1" class="bi bi-star-fill"></label>
+                                </div>
+                            </form>
+                            <p class="rate mt-3 text-center "><span class="rating" >0/5</span></p>
+                            <span class="favorite-icon bi bi-heart m-auto" id="favorite-icon"
+                            data-img="hair/pureology-2b3f998739754900a0dc98f1dde6b664.jpg"
+                                data-title="Shampoo & Condition" data-brand="Pureology" data-price="750$"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-5 product">
+                    <div>
+                        <img class="product-img" src="hair/moroccan-argan-carrier-oil-4oz.webp">
+                    </div>
+                    <div class="details pb-0 px-0">
+
+                        <h4 class="text-center">Organ Oil</h4>
+                        <h6 class="text-center">Majestic Pure</h6>
+                        <p class="text-center">500$</p>
+                        <div id="spCard" class=" card 
+                        mt-2 m-auto justify-content-center d-flex justify-self-center w-100 h-75 border-0">
+
+                           <form class="starForm " >
+                               <div class="stars" >
+                                   <input type="radio" name="rating" id="starNine-5" value="5">
+                                   <label for="starNine-5" class="bi bi-star-fill"></label>
+                                   <input type="radio" name="rating" id="starNine-4" value="4">
+                                   <label for="starNine-4" class="bi bi-star-fill"></label>
+                                   <input type="radio" name="rating" id="starNine-3" value="3">
+                                   <label for="starNine-3" class="bi bi-star-fill"></label>
+                                   <input type="radio" name="rating" id="starNine-2" value="2">
+                                   <label for="starNine-2" class="bi bi-star-fill"></label>
+                                   <input type="radio" name="rating" id="starNine-1" value="1">
+                                   <label for="starNine-1" class="bi bi-star-fill"></label>
+                               </div>
+                           </form>
+                           <p class="rate mt-3 text-center "><span class="rating" >0/5</span></p>
+                           <span class="favorite-icon bi bi-heart m-auto" id="favorite-icon"
+                           data-img="hair/moroccan-argan-carrier-oil-4oz.webp"
+                                data-title="Organ Oil" data-brand="Majestic Pure" data-price="500$"></span>
+                       </div>
+                    </div>
+                </div>
+                <div class="mb-5 product">
+                    <div>
+                        <img class="product-img" src="hair/d23265de0513497608026447779ab962.jpg">
+                    </div>
+                    <div  class="details px-0 pb-0">
+                        <h4 class="text-center">Milk Shampoo & Cond.</h4>
+                        <h6 class="text-center">Vilva</h6>
+                        <p class="text-center">680$</p>
+                        <div class="card mt-2 m-auto justify-content-center d-flex justify-self-center w-100 h-75 border-0">
+                            <form class="starForm">
+                                <div class="stars">
+                                    <input type="radio" name="rating" id="starTwo-5" value="5">
+                                    <label for="starTwo-5" class="bi bi-star-fill"></label>
+                                    <input type="radio" name="rating" id="starTwo-4" value="4">
+                                    <label for="starTwo-4" class="bi bi-star-fill"></label>
+                                    <input type="radio" name="rating" id="starTwo-3" value="3">
+                                    <label for="starTwo-3" class="bi bi-star-fill"></label>
+                                    <input type="radio" name="rating" id="starTwo-2" value="2">
+                                    <label for="starTwo-2" class="bi bi-star-fill"></label>
+                                    <input type="radio" name="rating" id="starTwo-1" value="1">
+                                    <label for="starTwo-1" class="bi bi-star-fill"></label>
+                                </div>
+                            </form>
+                            <p class="rate mt-3 text-center"><span class="rating">0/5</span></p>
+                            <span class="favorite-icon bi bi-heart m-auto" id="favorite-icon"
+                            data-img="hair/d23265de0513497608026447779ab962.jpg"
+                                data-title="Milk Shampoo & Cond." data-brand="Vilva" data-price="680$"></span>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-12 my-5">
+                <div class="mb-5 product">
+                    <div>
+                        <img class="product-img" src="hair/ArgainOilConditionerRawAfrican-sw-min_775x.webp">
+                    </div>
+                    <div class="details px-0 pb-0">
+                        <h4 class="text-center">Argan Oil Conditioner</h4>
+                        <h6 class="text-center">Raw African</h6>
+                        <p class="text-center">400$</p>
+                        <div class=" card 
+                         mt-2 m-auto justify-content-center d-flex justify-self-center w-100 h-75 border-0">
+
+                            <form class="starForm " >
+                                <div class="stars" >
+                                    <input type="radio" name="rating" id="starThree-5" value="5">
+                                    <label for="starThree-5" class="bi bi-star-fill"></label>
+                                    <input type="radio" name="rating" id="starThree-4" value="4">
+                                    <label for="starThree-4" class="bi bi-star-fill"></label>
+                                    <input type="radio" name="rating" id="starThree-3" value="3">
+                                    <label for="starThree-3" class="bi bi-star-fill"></label>
+                                    <input type="radio" name="rating" id="starThree-2" value="2">
+                                    <label for="starThree-2" class="bi bi-star-fill"></label>
+                                    <input type="radio" name="rating" id="starThree-1" value="1">
+                                    <label for="starThree-1" class="bi bi-star-fill"></label>
+                                </div>
+                            </form>
+                            <p class="rate mt-3 text-center "><span class="rating" >0/5</span></p>
+                            <span class="favorite-icon bi bi-heart m-auto" id="favorite-icon"
+                            data-img="hair/ArgainOilConditionerRawAfrican-sw-min_775x.webp"
+                                data-title="Argan Oil Conditioner" data-brand="Raw African" data-price="400$"></span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-5 product">
+                    <div>
+                        <img class="product-img"
+                            src="hair/61kKwS8ELSL._AC_UF1000,1000_QL80_.jpg">
+
+                    </div>
+                    <div class="details px-0 pb-0">
+
+                        <h4 class="text-center">Keratine Smooth</h4>
+                        <h6 class="text-center">Tresemme</h6>
+                        <p class="text-center">550$</p>
+                        <div class=" card 
+                         mt-2 m-auto justify-content-center d-flex justify-self-center w-100 h-75 border-0">
+
+                            <form class="starForm " >
+                                <div class="stars" >
+                                    <input type="radio" name="rating" id="starFour-5" value="5">
+                                    <label for="starFour-5" class="bi bi-star-fill"></label>
+                                    <input type="radio" name="rating" id="starFour-4" value="4">
+                                    <label for="starFour-4" class="bi bi-star-fill"></label>
+                                    <input type="radio" name="rating" id="starFour-3" value="3">
+                                    <label for="starFour-3" class="bi bi-star-fill"></label>
+                                    <input type="radio" name="rating" id="starFour-2" value="2">
+                                    <label for="starFour-2" class="bi bi-star-fill"></label>
+                                    <input type="radio" name="rating" id="starFour-1" value="1">
+                                    <label for="starFour-1" class="bi bi-star-fill"></label>
+                                </div>
+                            </form>
+                            <p class="rate mt-3 text-center "><span class="rating" >0/5</span></p>
+                            <span class="favorite-icon bi bi-heart m-auto" id="favorite-icon"
+                            data-img="hair/61kKwS8ELSL._AC_UF1000,1000_QL80_.jpg"
+                            data-title="Keratine Smooth" data-brand="Tresemme" data-price="550$"></span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="mb-5 product">
+                    <div>
+                        <img class="product-img"
+                            src="hair/36852156.webp">
+
+                    </div>
+                    <div class="details px-0 pb-0">
+
+                        <h4 class="text-center">Argan Oil Collection</h4>
+                        <h6 class="text-center">Greenology</h6>
+                        <p class="text-center">730$</p>
+                        <div class=" card 
+                        mt-2 m-auto justify-content-center d-flex justify-self-center w-100 h-75 border-0">
+
+                           <form class="starForm " >
+                               <div class="stars" >
+                                   <input type="radio" name="rating" id="starFive-5" value="5">
+                                   <label for="starFive-5" class="bi bi-star-fill"></label>
+                                   <input type="radio" name="rating" id="starFive-4" value="4">
+                                   <label for="starFive-4" class="bi bi-star-fill"></label>
+                                   <input type="radio" name="rating" id="starFive-3" value="3">
+                                   <label for="starFive-3" class="bi bi-star-fill"></label>
+                                   <input type="radio" name="rating" id="starFive-2" value="2">
+                                   <label for="starFive-2" class="bi bi-star-fill"></label>
+                                   <input type="radio" name="rating" id="starFive-1" value="1">
+                                   <label for="starFive-1" class="bi bi-star-fill"></label>
+                               </div>
+                           </form>
+                           <p class="rate mt-3 text-center "><span class="rating" >0/5</span></p>
+                           <span class="favorite-icon bi bi-heart m-auto" id="favorite-icon"
+                           data-img="hair/36852156.webp"
+                            data-title="Argan Oil Collection" data-brand="Greenology" data-price="730$"></span>
+                       </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-12 my-5">
+                <div class="mb-5 product">
+                    <div>
+                        <img class="product-img" src="hair/1240015-1_831463b0-f3f7-4165-a8ad-3d5e89cba3bf_grande.webp">
+                    </div>
+                    <div class="details px-0 pb-0">
+                        <h4 class="text-center">Keratin & Argan Oil</h4>
+                        <h6 class="text-center">Tresemme</h6>
+                        <p class="text-center">430$</p>
+                        <div class=" card 
+                        mt-2 m-auto justify-content-center d-flex justify-self-center w-100 h-75 border-0">
+
+                           <form class="starForm " >
+                               <div class="stars" >
+                                   <input type="radio" name="rating" id="starSix-5" value="5">
+                                   <label for="starSix-5" class="bi bi-star-fill"></label>
+                                   <input type="radio" name="rating" id="starSix-4" value="4">
+                                   <label for="starSix-4" class="bi bi-star-fill"></label>
+                                   <input type="radio" name="rating" id="starSix-3" value="3">
+                                   <label for="starSix-3" class="bi bi-star-fill"></label>
+                                   <input type="radio" name="rating" id="starSix-2" value="2">
+                                   <label for="starSix-2" class="bi bi-star-fill"></label>
+                                   <input type="radio" name="rating" id="starSix-1" value="1">
+                                   <label for="starSix-1" class="bi bi-star-fill"></label>
+                               </div>
+                           </form>
+                           <p class="rate mt-3 text-center "><span class="rating" >0/5</span></p>
+                           <span class="favorite-icon bi bi-heart m-auto" id="favorite-icon"
+                           data-img="hair/1240015-1_831463b0-f3f7-4165-a8ad-3d5e89cba3bf_grande.webp"
+                                data-title="Keratin & Argan Oil" data-brand="Tresemme" data-price="430$"></span>
+                       </div>
+                        
+                    </div>
+                </div>
+                <div class="mb-5 product">
+                    <div>
+                        <img class="product-img" src="hair/1.jpg">
+                    </div>
+                    <div class="details px-0 pb-0">
+                        <h4 class="text-center">Conditioner</h4>
+                        <h6 class="text-center">Clary</h6>
+                        <p class="text-center">350$</p>
+                        <div class=" card 
+                        mt-2 m-auto justify-content-center d-flex justify-self-center w-100 h-75 border-0">
+
+                           <form class="starForm " >
+                               <div class="stars" >
+                                   <input type="radio" name="rating" id="starSeven-5" value="5">
+                                   <label for="starSeven-5" class="bi bi-star-fill"></label>
+                                   <input type="radio" name="rating" id="starSeven-4" value="4">
+                                   <label for="starSeven-4" class="bi bi-star-fill"></label>
+                                   <input type="radio" name="rating" id="starSeven-3" value="3">
+                                   <label for="starSeven-3" class="bi bi-star-fill"></label>
+                                   <input type="radio" name="rating" id="starSeven-2" value="2">
+                                   <label for="starSeven-2" class="bi bi-star-fill"></label>
+                                   <input type="radio" name="rating" id="starSeven-1" value="1">
+                                   <label for="starSeven-1" class="bi bi-star-fill"></label>
+                               </div>
+                           </form>
+                           <p class="rate mt-3 text-center "><span class="rating" >0/5</span></p>
+                           <span class="favorite-icon bi bi-heart m-auto" id="favorite-icon"
+                           data-img="hair/1.jpg" data-title="Conditioner" data-brand="Clary" data-price="350$"></span>
+                       </div>
+                    </div>
+                </div>
+                <div class="mb-5 product">
+                    <div>
+                        <img class="product-img" src="hair/000-2023-04-05T080509.588_large.webp">
+                    </div>
+                    <div class="details px-0 pb-0">
+                        
+                        <h4 class="text-center">Vitamino Color</h4>
+                        <h6 class="text-center">L’Oreal</h6>
+                        <p class="text-center">550$</p>
+                        <div class=" card 
+                         mt-2 m-auto justify-content-center d-flex justify-self-center w-100 h-75 border-0">
+
+                            <form class="starForm " >
+                                <div class="stars" >
+                                    <input type="radio" name="rating" id="starEight-5" value="5">
+                                    <label for="starEight-5" class="bi bi-star-fill"></label>
+                                    <input type="radio" name="rating" id="starEight-4" value="4">
+                                    <label for="starEight-4" class="bi bi-star-fill"></label>
+                                    <input type="radio" name="rating" id="starEight-3" value="3">
+                                    <label for="starEight-3" class="bi bi-star-fill"></label>
+                                    <input type="radio" name="rating" id="starEight-2" value="2">
+                                    <label for="starEight-2" class="bi bi-star-fill"></label>
+                                    <input type="radio" name="rating" id="starEight-1" value="1">
+                                    <label for="starEight-1" class="bi bi-star-fill"></label>
+                                </div>
+                            </form>
+                            <p class="rate mt-3 text-center "><span class="rating" >0/5</span></p>
+                            <span class="favorite-icon bi bi-heart m-auto" id="favorite-icon"
+                            data-img="hair\000-2023-04-05T080509.588_large.webp"
+                            data-title="Vitamino color" data-brand="L’OREAL" data-price="550$"></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="switch-container">
+            <label class="switch">
+                <input class="ms-1" type="checkbox" id="themeSwitch">
+                <span class="slider"></span>
+            </label>
+        </div>
+        <div>
+            <a class="nav-link text-center mt-2" href="#navbar">Back to Top</a>
+        </div>
+    </div>
+
+    <footer id="footer" class="bg-dark text-light text-center py-4">
+        <div class="row">
+            <div class="col-4"> 
+                <p>&copy; 2024 Care House. All rights reserved.</p>
+            </div>
+            <div class="col-4"> 
+                <p>Contact Us</p>
+                <a href="https://wa.me/+201203932283" class="text-light" target="_blank">
+                    <img src="whatsapp-white-icon.png" alt="WhatsApp" style="width: 50px; height: 50px;">
+                </a>
+            </div>
+        <div class="col-4">
+        <p>Follow us on: </p>
+        <div>
+            <a  href="https://www.facebook.com/viola.fawzy.986/" class="text-light "><img src="facebook-new.png" alt="FaceBook" style="width: 50px; height: 50px;"></a>
+            <a href="https://www.instagram.com/viola.fawzy.986?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="text-light"><img src="instagram-new.png" alt="Instagram" style="width: 50px; height: 50px;"></a>
+        </div>
+    </div>
+    </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
